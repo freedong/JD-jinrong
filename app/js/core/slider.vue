@@ -6,6 +6,7 @@
 					<img :src="item.src" alt="">
 				</router-link>
 			</swiper-slide>
+			<div class="swiper-pagination" v-if="options.pagination" slot="pagination"></div>
 		</swiper>
 	</section>
 </template>
@@ -17,6 +18,10 @@
 			swiperSlide,
 		},
 		props: {
+			cname:{
+				type: String,
+				default: "",
+			},
 			 options: {
 			 	type: Object,
 			 	default() {
@@ -43,4 +48,5 @@
 <style lang="scss">
 // ~这个符号可以找到路径
 	@import "~swiper/dist/css/swiper.css";
+	
 </style>

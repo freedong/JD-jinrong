@@ -4,7 +4,7 @@
 // 公共按钮
 @mixin btn($size:14px,$color: #fff,$bgcolor:#F04752,$padding: 5px,$radius:5px){
 	padding: $padding;
-	background-color: #bgcolor;
+	background-color: $bgcolor;
 	border-radius: $radius;
 	border:1px solid $bgcolor;
 	font-size: $size;
