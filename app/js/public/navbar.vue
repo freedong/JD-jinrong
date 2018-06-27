@@ -42,6 +42,13 @@
 		},
 	}
 </script>
+<style lang="scss">
+	.router-link-exact-active{
+		p{
+			color: red!important;
+		}
+	}
+</style>
 <style lang="scss" module>
 	@import "../../css/element.scss";
 	.panel{
