@@ -9,6 +9,7 @@ module.exports = env => {
   }
   let plugins=[
     new CleanWebpackPlugin(['dist']),
+    // ./app/views/index.html
     new HtmlWebpackPlugin({template: './app/views/index.html'}),
     new webpack.NamedModulesPlugin(),
     new webpack.HotModuleReplacementPlugin()
